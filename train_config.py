@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Simple config file to be used for navigation project.
+Simple config file to be used for Reacher project.
 """
 import os
 from datetime import datetime

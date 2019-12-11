@@ -39,6 +39,10 @@ def plot_scores(scores, cfg):
     ax.plot(scores.index, scores.values, ls="-", color="k", label="Scores")
     ma = scores.rolling(20).median()
     ax.plot(ma.index, ma.values, ls="-", color="r", label="Moving median scores (20 episodes)")
+
+    ma = scores.rolling(100).median()
+    ax.plot(ma.index, ma.values, ls="-", color="b", label="Moving median scores (100 episodes)")
+
     plt.ylabel('Score')
     plt.xlabel('Episode #')
     plt.legend(loc="upper left")
